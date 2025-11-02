@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "79face33-8e3d-42f5-9411-505288d1ae26",
+		"name": "Car API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49565613",
+		"_collection_link": "https://swostikl-7502745.postman.co/workspace/Swostika-Lama's-Workspace~c28f301a-e53d-47bb-852d-302075aa725d/collection/49565613-79face33-8e3d-42f5-9411-505288d1ae26?action=share&source=collection_link&creator=49565613"
+	},
+	"item": [
+		{
+			"name": "Get all Cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a Car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"model\": \"Skoda\",\n  \"color\": \"Blue\",\n  \"age\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Car by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"model\": \"Toyota Camry\",\n  \"color\": \"Blue\",\n  \"age\": 3\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/cars/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"cars",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Car by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"color\": \"Red\",\n  \"age\": 4\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/cars/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"cars",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete car by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"color\": \"Red\",\n  \"age\": 4\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/cars/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"cars",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "404d5643-c4c6-49c4-a083-ae9a1a826143",
+		"name": "Dog API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49565613",
+		"_collection_link": "https://swostikl-7502745.postman.co/workspace/Swostika-Lama's-Workspace~c28f301a-e53d-47bb-852d-302075aa725d/collection/49565613-404d5643-c4c6-49c4-a083-ae9a1a826143?action=share&source=collection_link&creator=49565613"
+	},
+	"item": [
+		{
+			"name": "Get All Dogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/dogs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"dogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a Dog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"name\": \"Tommy\",\n \"weight\": 5\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/dogs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"dogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Dog by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"name\": \"Buddy\",\n \"weight\": 20\n }"
+				},
+				"url": {
+					"raw": "http://localhost:4000/dogs/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"dogs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Dog By ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"weight\": 14\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/dogs/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"dogs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Dog By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/dogs/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"dogs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
